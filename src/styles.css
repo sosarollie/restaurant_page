@@ -2,13 +2,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  background-color: rgb(203, 247, 231);
+  background-image: url(./images/background.jpg);
 }
 
 .logo {
+  margin-top: 50px;
   max-width: 250px;
   height: auto;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .btnContainer {
@@ -19,4 +23,18 @@ body {
 
 #content {
   padding: 100px;
+}
+
+.homeContainer,
+.menuContainer,
+.contactContainer {
+  display: flex;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.menuImage {
+  flex: 1 1 0;
+  min-width: 0;
 }
