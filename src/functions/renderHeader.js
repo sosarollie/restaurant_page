@@ -1,10 +1,7 @@
 import Logo from "../images/logo.png";
 
 export default function render() {
-  const content = document.getElementById("content");
-
-  const h1 = document.createElement("h1");
-  h1.innerText = "Vida Café";
+  const body = document.querySelector("body");
 
   const myLogo = new Image();
   myLogo.src = Logo;
@@ -29,7 +26,6 @@ export default function render() {
   btnContainer.appendChild(menuBtn);
   btnContainer.appendChild(contactBtn);
 
-  content.appendChild(myLogo);
-  content.appendChild(h1);
-  content.appendChild(btnContainer);
+  body.appendChild(myLogo);
+  body.appendChild(btnContainer);
 }

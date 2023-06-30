@@ -1,4 +1,22 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .logo {
-  width: 100px;
-  height: 100px;
+  max-width: 250px;
+  height: auto;
+  align-self: flex-start;
+}
+
+.btnContainer {
+  display: flex;
+  align-self: center;
+  gap: 5px;
+}
+
+#content {
+  padding: 100px;
 }
