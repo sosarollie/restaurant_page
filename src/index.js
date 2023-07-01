@@ -4,6 +4,7 @@ import loadContact from "./tabs/contact";
 import render from "./functions/renderHeader";
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/brands'
 import "./styles.css";
 
 function component() {
@@ -14,13 +15,13 @@ function component() {
 
   btnContainer.addEventListener("click", function (e) {
     switch (e.target.innerText) {
-      case "Home":
+      case "Inicio":
         loadHome();
         break;
-      case "Menu":
+      case "Menú":
         loadMenu();
         break;
-      case "Contact":
+      case "Contacto":
         loadContact();
         break;
     }
@@ -29,4 +30,16 @@ function component() {
   return content;
 }
 
+function footer() {
+  const footerDiv = document.createElement("footer");
+  const icon = document.createElement("i");
+  icon.classList.add("fa-brands", "fa-github")
+  footerDiv.innerText = "Copyright 2023 @sosarollie";
+  footerDiv.appendChild(icon);
+
+  return footerDiv;
+}
+
 document.body.appendChild(component());
+document.body.appendChild(footer());
+

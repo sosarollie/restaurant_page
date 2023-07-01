@@ -14,9 +14,9 @@ export default function render() {
   const menuBtn = document.createElement("button");
   const contactBtn = document.createElement("button");
 
-  homeBtn.innerText = "Home";
-  menuBtn.innerText = "Menu";
-  contactBtn.innerText = "Contact";
+  homeBtn.innerText = "Inicio";
+  menuBtn.innerText = "Menú";
+  contactBtn.innerText = "Contacto";
 
   homeBtn.classList.add("homeBtn");
   menuBtn.classList.add("menuBtn");
