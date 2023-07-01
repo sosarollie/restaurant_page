@@ -2,6 +2,8 @@ import loadHome from "./tabs/home";
 import loadMenu from "./tabs/menu";
 import loadContact from "./tabs/contact";
 import render from "./functions/renderHeader";
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid'
 import "./styles.css";
 
 function component() {

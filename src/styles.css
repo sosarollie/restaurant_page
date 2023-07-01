@@ -36,6 +36,7 @@ body {
 .menuContainer,
 .contactContainer {
   display: flex;
+  align-items: center;
   padding: 10px;
   border: solid 2px rgb(92, 199, 163);
   border-radius: 5px;
@@ -67,6 +68,24 @@ button:hover {
   border-right: solid 1px rgb(171, 173, 173);
 }
 
+.textContainer {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
 p {
-  font-size: 25px;
+  font-size: 40px;
+}
+
+.location, .tel {
+  display: flex;
+  align-self: flex-end;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+svg {
+  font-size: 30px;
 }
